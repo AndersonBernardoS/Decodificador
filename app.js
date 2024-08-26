@@ -20,18 +20,26 @@ function descodificar(texto) {
 
 // Função que oculta a mensagem inicial e exibe o resultado
 function imagemInicial(acao) {
-    const textoEntrada = document.getElementById("texto__entrada").value; // Obtém o texto inserido pelo usuário
-    let resultado;
+    const textoEntrada = document.getElementById("texto__entrada").value.trim(); // Obtém o texto inserido pelo usuário e remove espaços em branco
 
+    if (textoEntrada === "") {
+        // Se o campo de texto estiver vazio, exibe a mensagem inicial e esconde o resultado
+        document.getElementById("mensagem_inicial").style.display = "block";
+        document.getElementById("resultado").style.display = "none";
+        return; // Sai da função para evitar executar a codificação/decodificação
+    }
+
+    let resultado;
     if (acao === 'codificar') {
         resultado = codificar(textoEntrada); // Codifica o texto
     } else if (acao === 'descodificar') {
         resultado = descodificar(textoEntrada); // Descodifica o texto
     }
 
-    document.getElementById("mensagem_inicial").style.display = "none"; // Esconde a mensagem inicial
-    document.getElementById("resultado").style.display = "block"; // Mostra o resultado
-    document.querySelector("#resultado p").innerHTML = `<b>Texto:</b> ${resultado}`; // Insere o texto codificado/descodificado na tag <p>
+    // Esconde a mensagem inicial e mostra o resultado
+    document.getElementById("mensagem_inicial").style.display = "none";
+    document.getElementById("resultado").style.display = "block";
+    document.querySelector("#resultado p").innerHTML = `<b>Texto:</b> ${resultado}`;
 }
 
 //Função de Copiar o texto resultante
