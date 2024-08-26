@@ -13,16 +13,13 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-
-
-/* Parte Lateral esquerda com a entrada da criptografia e descritografia. */
-
     .decodificador__usuario {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
 
+    /* Parte Lateral esquerda com a entrada da criptografia e descritografia. */
         .decodificador__usuario__entrada {
             display: flex;
             flex-direction: column;
