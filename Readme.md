@@ -5,7 +5,7 @@ Essa aplicação consiste em aplicar uma regra de criptografar e descriptografar
 
 #
 
-Requisitos:
+### Requisitos:
 - Deve funcionar apenas com letras minúsculas e sem acentos ou caracteres especiais.
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 
@@ -15,7 +15,7 @@ Requisitos:
 ### Após a interação do usuário, a página substitui alguns elementos, deixando apenas o resultado do texto e o botão de copiar a mensagem:
 <img src="assets\pagina_interacao.png" alt="Layout da página após a interação do usuário">
 
-### Ao clicar no botão "Copiar" uma mensagem aparece como 'alert' para que o usuário seja notificado de que a mensagem foi copiado para a área de transferência com sucesso.
+### Ao clicar no botão "Copiar" uma mensagem aparece como 'alert' para que o usuário seja notificado de que a mensagem foi copiada para a área de transferência com sucesso.
 <img src="assets\alert.png" alt="Imagem de alerta de mensagem copiada para a área de transferência">
 
 ### Um detalhe extra: o rodapé contém a informação de créditos pelo desenvolvimento com uma referência de âncora para o link do perfil do LinkedIn.
