@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Decodificador - Challenge ONE Next & Alura</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    
+    <section class="decodificador__usuario">
+        <div class="decodificador__usuario__entrada">
+            <img class="incon__alura" src="assets/Frame_6.png" alt="Icone Alura 'a'.">
+
+            <div class="bloco__interacao">
+                <textarea class="decodificador__usuario__entrada__texto" name="Entrada do Texto" id="texto__entrada" placeholder="Digite seu texto"></textarea>
+
+                <p class="decodificador__usuario__entrada__informacao">
+                        <img class="decodificador__usuario__entrada__informacao__inconinfo" src="assets/bi_exclamation-circle-fill.png" alt="Info">Apenas letras minúsculas e sem acento nem caracteres especiais.
+                </p>
+            </div>
+        
+            <div class="decodificador__usuario__entrada__buttons">
+                <button onclick="imagemInicial('codificar')" class="decodificador__usuario__entrada__buttons__criptografar">Criptografar</button>
+                <button onclick="imagemInicial('descodificar')" class="decodificador__usuario__entrada__buttons__descriptografar">Descriptografar</button>
+            </div>
+        </div>
+
+        <div class="decodificador__usuario__saida">
+
+            <div class="bloco_saida" id="bloco_saida">
+                
+                <!-- Mensagem inicial, antes de codificar ou descodificar -->
+                 <div class="mensagem__inicial" id="mensagem_inicial">
+                    <img class="decodificador__usuario__saida__image_before" src="assets/High quality products 1 1.svg" alt="Menina procurando uma joia.">
+
+                    <div class="decodificador__usuario__saida__mensagem">
+                        <h1 class="decodificador__usuario__saida__mensagem__titulo">Nenhuma mensagem encontrada.</h1>
+                        <p class="decodificador__usuario__saida__mensagem__paragrafo">Digite um texto para criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+
+                <!-- Texto resultante, após codificar ou descodificar -->
+                <div class="resultado" id="resultado">
+                    <p class="resultado__texto"></p>
+
+                    <button onclick="copiarTexto()" class="decodificador__usuario__saida__buttons__copiar">Copiar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Developed by <a href="https://www.linkedin.com/in/devandersonbsilva/">Anderson Bernardo</a></p>
+    </footer>
+
+</body>
+</html>

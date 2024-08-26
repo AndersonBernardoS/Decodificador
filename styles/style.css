@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    border: none;
+}
+
+body{
+    box-sizing: border-box;
+    background: #E5E5E5;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/* Parte Lateral esquerda com a entrada da criptografia e descritografia. */
+
+    .decodificador__usuario {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+        .decodificador__usuario__entrada {
+            display: flex;
+            flex-direction: column;
+            width: 100vh;
+            height: 100vh;
+            justify-content: space-between;
+            justify-items: center;
+        }
+
+            .incon__alura {
+                width: 120px;
+                height: 48px;
+                margin: 40px 0px 40px 0px;
+            }
+
+            .bloco__interacao {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 80px 0px 40px;
+            }
+
+                /* Caixa de entrada do texto. */
+                .decodificador__usuario__entrada__texto {
+                    font-size: x-large;
+                    background-color: #E5E5E5;
+                    color: #0A3871;
+                    font-family: "Inter", sans-serif;
+                    border-radius: 4px;
+                    width: 100vh;
+                    height: 50vh;
+                }
+                    .decodificador__usuario__entrada__texto::placeholder {
+                        text-align: start;
+                        font-size: xx-large;
+                    }
+
+                .decodificador__usuario__entrada__informacao {
+                    color: #495057;
+                    font-size: small;
+                }
+                
+                    .decodificador__usuario__entrada__informacao__inconinfo {
+                        margin: 0px 5px;
+                    }
+
+        
+        .decodificador__usuario__entrada__buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 16px;
+        }
+            
+            .decodificador__usuario__entrada__buttons__criptografar {
+                background-color: #0A3871;
+                width: 328px;
+                height: 67px;
+                border-radius: 24px;
+            }
+                .decodificador__usuario__entrada__buttons__criptografar:hover {
+                    border: 2px dotted #3a81d9;
+                    cursor: pointer;
+                }
+
+            .decodificador__usuario__entrada__buttons__descriptografar {
+                color: #0A3871;
+                background-color: #D8DFE8;
+                border: 2px solid #0A3871;
+                width: 328px;
+                height: 67px;
+                border-radius: 24px;
+            }
+                .decodificador__usuario__entrada__buttons__descriptografar:hover {
+                    border: 2px dotted #3a81d9;
+                    cursor: pointer;
+                }
+        
+
+
+/* Parte Lateral direita com o resultado da criptografia e descritografia */
+#bloco_saida {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    border-radius: 32px;
+    background-color: #fff;
+    height: 100vh; 
+    width: 100vh;
+    text-align: center;
+    align-items: center;
+    position: relative; 
+}
+
+        .decodificador__usuario__saida__image_before {
+            margin: 180px 0px 0px 60px;
+            width: 336px;
+            height: 304px;
+        }
+
+        .decodificador__usuario__saida__mensagem {
+            justify-content: space-between;
+            justify-items: center;
+            margin: 0px 30px 200px 30px;
+        }
+
+            .decodificador__usuario__saida__mensagem__titulo {
+                color: #343A40;
+            }
+
+            .decodificador__usuario__saida__mensagem__paragrafo {
+                color: #495057;
+            }
+
+        #resultado {
+            display: none;
+        }
+        .resultado {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; 
+        width: 100%; 
+        padding: 20px; 
+    }
+
+        .resultado__texto {
+            font-size: large;
+            color: #0A3871;
+            font-family: "Inter", sans-serif;
+            text-align: left; 
+            padding: 16px;
+            margin-bottom: 20px; 
+            overflow-wrap: break-word; 
+        }
+
+        .decodificador__usuario__saida__buttons__copiar {
+            color: #0A3871;
+            background-color: #D8DFE8;
+            border: 2px solid #0A3871;
+            width: 328px;
+            height: 67px;
+            border-radius: 24px;
+            align-self: center;
+            margin-bottom: 16px;
+            position: absolute; 
+            bottom: 16px; 
+        }
+            .decodificador__usuario__saida__buttons__copiar:hover {
+                border: 2px dotted #3a81d9;
+                cursor: pointer;
+            }
+
+
+
+.rodape {
+    padding: 1.13rem;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    text-align: center;
+    font-family: var(--fonte-textos);
+    font-style: italic;
+    font-size: 400;
+}
