@@ -10,17 +10,13 @@ Requisitos:
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 
 ### A página inicial possui um layout simples:
-
-![Layout da página inicial](assets\pagina_inicial.png)
+<img src="assets\pagina_inicial.png" alt="Layout da página inicial">
 
 ### Após a interação do usuário, a página substitui alguns elementos, deixando apenas o resultado do texto e o botão de copiar a mensagem:
-
-![alt text](assets\pagina_interacao.png)
+<img src="assets\pagina_interacao.png" alt="Layout da página após a interação do usuário">
 
 ### Ao clicar no botão "Copiar" uma mensagem aparece como 'alert' para que o usuário seja notificado de que a mensagem foi copiado para a área de transferência com sucesso.
-
-![alt text](assets\alert.png)
+<img src="assets\alert.png" alt="Imagem de alerta de mensagem copiada para a área de transferência">
 
 ### Um detalhe extra: o rodapé contém a informação de créditos pelo desenvolvimento com uma referência de âncora para o link do perfil do LinkedIn.
-
-![alt text](assets\rodape.png)
+<img src="assets\rodape.png" alt="Rodapé com link para LinkedIn">
