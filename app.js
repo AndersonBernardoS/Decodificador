@@ -39,7 +39,7 @@ function imagemInicial(acao) {
     // Esconde a mensagem inicial e mostra o resultado
     document.getElementById("mensagem_inicial").style.display = "none";
     document.getElementById("resultado").style.display = "block";
-    document.querySelector("#resultado p").innerHTML = `<b>Texto:</b> ${resultado}`;
+    document.querySelector("#resultado p").innerHTML = `${resultado}`;
 }
 
 //Função de Copiar o texto resultante

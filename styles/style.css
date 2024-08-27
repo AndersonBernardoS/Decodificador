@@ -162,8 +162,8 @@ body{
             height: 67px;
             border-radius: 24px;
             align-self: center;
-            margin-bottom: 16px;
-            position: absolute; 
+            margin: 540px 0px 0px 0px;
+            /* position: absolute;   */
             bottom: 16px; 
         }
             .decodificador__usuario__saida__buttons__copiar:hover {
