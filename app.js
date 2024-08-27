@@ -1,3 +1,9 @@
+// Função para validar o texto inserido
+function validarTexto(texto) {
+    const regex = /^[a-z\s]*$/; // Permite apenas letras minúsculas e espaços
+    return regex.test(texto); // Retorna true se o texto estiver válido
+}
+
 // Função para codificar a mensagem
 function codificar(texto) {
     return texto
@@ -22,11 +28,17 @@ function descodificar(texto) {
 function imagemInicial(acao) {
     const textoEntrada = document.getElementById("texto__entrada").value.trim(); // Obtém o texto inserido pelo usuário e remove espaços em branco
 
+    // Verificar se o texto é inválido
+    if (!validarTexto(textoEntrada)) { 
+        alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
+        return;
+    }
+    
     if (textoEntrada === "") {
         // Se o campo de texto estiver vazio, exibe a mensagem inicial e esconde o resultado
         document.getElementById("mensagem_inicial").style.display = "block";
         document.getElementById("resultado").style.display = "none";
-        return; // Sai da função para evitar executar a codificação/decodificação
+        return; 
     }
 
     let resultado;
