@@ -13,6 +13,7 @@ Essa aplicação consiste em aplicar uma regra de criptografar e descriptografar
 - Deve funcionar apenas com letras minúsculas e sem acentos ou caracteres especiais.
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
 
+## Apresentação:
 ### A página inicial possui um layout simples:
 <img src="assets\pagina_inicial.png" alt="Layout da página inicial">
 
