@@ -5,13 +5,13 @@ Essa aplicação consiste em aplicar uma regra de criptografar e descriptografar
 
 #
 
-## Para ver o site em execução (deployed) clique <a href="https://andersonbernardos.github.io/Decodificador/">AQUI</a>
-
-#
-
 ### Requisitos:
 - Deve funcionar apenas com letras minúsculas e sem acentos ou caracteres especiais.
 - Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
+
+## Para ver o site em execução (deployed) clique <a href="https://andersonbernardos.github.io/Decodificador/">AQUI</a>
+
+#
 
 ## Apresentação:
 ### A página inicial possui um layout simples:
